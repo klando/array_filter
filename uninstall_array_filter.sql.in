@@ -1,0 +1,5 @@
+BEGIN;
+SET search_path = public;
+DROP FUNCTION array_filter(anyarray, regproc, int, variadic cstring[]);
+
+COMMIT;

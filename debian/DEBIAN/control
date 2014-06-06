@@ -1,0 +1,9 @@
+Package: array-filter
+Version: 1.0.0-1
+Section: database
+Priority: optional
+Architecture: all
+Depends: postgresql-8.4 | postgresql-9.0 | postgresql-9.1
+Maintainer: Cédric Villemain <cedric@2ndQuadrant.fr>
+Description: PostgreSQL extension to provide
+             array_filter(array, callback_fct, limit, args) SQL function.

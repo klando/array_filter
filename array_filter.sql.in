@@ -1,0 +1,11 @@
+BEGIN;
+
+SET search_path = public;
+
+CREATE OR REPLACE
+FUNCTION array_filter(anyarray, regproc, int, variadic cstring[])
+RETURNS SETOF anyelement
+AS 'MODULE_PATHNAME'
+LANGUAGE C VOLATILE;
+
+COMMIT;
